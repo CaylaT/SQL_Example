@@ -29,7 +29,7 @@ namespace SQL_Example
                 con.SqlQuery("SELECT * FROM Names WHERE LastName = '" + TextBoxLastName.Text.Trim() + "'");
                 ListBoxDatabase.Items.Clear();
                 LabelOutput.Text = "Here is a list of all accounts with your Last Name";
-                // Now Diplay the Data to the user
+                
                 foreach (DataRow dr in con.QueryEx().Rows)
                 {
                     ListBoxDatabase.Items.Add(dr[1].ToString() + " " + dr[2].ToString());
