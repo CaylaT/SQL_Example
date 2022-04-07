@@ -34,7 +34,7 @@ namespace SQL_Example
             _da.Fill(_dt);
             return _dt;
         }
-        // Executes a T-SQL Statement against the Connection and returns rows
+        
         public void NonQueryEx()
         {
             Cmd.ExecuteNonQuery();
